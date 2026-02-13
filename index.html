@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para ti ❤️</title>
+
+<style>
+body{
+    background-color:#ffe6f0;
+    text-align:center;
+    font-family: Arial, sans-serif;
+    margin:80px 40px;
+}
+
+h1{
+    color:#cc0066;
+}
+
+p{
+    font-size:18px;
+    max-width:700px;
+    margin:20px auto;
+}
+
+button{
+    padding:10px 20px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin:15px;
+}
+
+#si{
+    background-color:#ff4d88;
+    color:white;
+}
+
+#no{
+    background-color:#999;
+    color:white;
+    position:absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Hola preciosotaaa</h1>
+
+<p><strong>Te dejo un mensajito</strong></p>
+
+<p>
+Holaaa Dayanaa espero que te encuentres bien y espero que nuestra relación dure mucho porque contigo mis días son más felices. eres una mujer valiosa para mí, una chica sensible conmigo pero fuerte con los demás,
+priorizas nuestra relación sin importarte las circunstancias, eres una guapura, un amor en persona,
+quiero besarte y agarrarte esa cintura y no soltarla, siempre sere tu apoyo, besoo.
+</p>
+
+<h2>¿Me aceptas un beso? 💋</h2>
+
+<button id="si" onclick="window.location.href='beso.html'">Sí 💕</button>
+<button id="no">No 🙈</button>
+
+<script>
+const botonNo = document.getElementById("no");
+
+botonNo.addEventListener("mouseover", function(){
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 50);
+
+    botonNo.style.left = x + "px";
+    botonNo.style.top = y + "px";
+});
+</script>
+
+</body>
+</html>
